@@ -5,6 +5,8 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
+
+//relaciones entre diferentes entidades de datos
 class Song extends Model
 {
     protected $fillable = [
@@ -15,7 +17,8 @@ class Song extends Model
 
     ];
 
-
+    // Esto significa que cada canción pertenece a un usuario.
+    
     public function user(): BelongsTo
     {
         return $this->belongsTo(User::class);

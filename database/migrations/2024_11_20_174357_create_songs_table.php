@@ -3,7 +3,8 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
-
+//que son las migraciones:
+//Permiten definir y modificar las tablas y sus columnas utilizando código PHP en lugar de escribir directamente consultas SQL.
 return new class extends Migration
 {
     /**

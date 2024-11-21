@@ -6,13 +6,26 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Song;
 
+//El Controlador actúa como intermediario entre el Modelo y la Vista. 
+//Recibe las solicitudes del usuario, interactúa con el Modelo para obtener los datos necesarios y 
+//luego pasa esos datos a la Vista para que se muestren al usuario
+//Interactuar con el Modelo para obtener o manipular los datos.
 
 class SongController extends Controller
     //request es para poder acceder a los datos enviados
     //y manipularlos , datos que son enviados desde el front
 {   //request es un objeto que viene del front
     //cuando recibamos un dato debemos validarlo primero
-    //
+    
+
+    //que es eloquent:  
+    //interactuar con la base de datos utilizando modelos de PHP. 
+    //Eloquent permite a los desarrolladores trabajar con bases de datos de una manera más intuitiva y 
+    //orientada a objetos, en lugar de escribir consultas SQL manualmente.
+    //mapea objetos con base de datos
+
+    //que es composer:
+    //gestión de dependencias en proyectos PHP.
     public function createSong(Request $request)
     {   //estos son los datos que voy a validar
         //titulo,autor,caratula,genero.
